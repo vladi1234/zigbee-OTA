@@ -18,13 +18,15 @@ const manufacturerNameLookup = {
     4364: 'Osram',
     4648: 'Terncy',
     4098: 'Tuya',
-    4151: 'Eurotronic',
+    4151: 'Jennic',
     4678: 'Danfoss',
     4687: 'Gledopto',
     4919: 'Datek',
     4447: 'Xiaomi',
     10132: 'ClimaxTechnology',
     4417: 'Telink',
+    4338: 'ubisys',
+    4742: 'Sonoff',
 };
 
 const main = async () => {
@@ -40,14 +42,20 @@ const main = async () => {
             const lib = url.toLowerCase().startsWith("https") ? require('https') : require('http');
             const file = fs.createWriteStream(path);
 
-            return new Promise((resolve) => {
+            return new Promise((resolve, reject) => {
                 const request = lib.get(url, function(response) {
-                  response.pipe(file);
-                  file.on('finish', function() {
-                    file.close(function() {
-                        resolve();
-                    });
-                  });
+                    if (response.statusCode >= 200 && response.statusCode < 300) {
+                        response.pipe(file);
+                        file.on('finish', function() {
+                          file.close(function() {
+                              resolve();
+                          });
+                        });
+                    } else if (response.headers.location) {
+                        resolve(downloadFile(response.headers.location, path));
+                    } else {
+                        reject(new Error(response.statusCode + ' ' + response.statusMessage));
+                    }
                 });
             });
         }
