@@ -6524,17 +6524,6 @@
     "releaseNotes": "New bootloader and support for connection to a central heating system"
   },
   {
-    "fileName": "VZM32-SN_0.10.ota",
-    "fileVersion": 16973834,
-    "fileSize": 227210,
-    "originalUrl": "https://files.inovelli.com/firmware/VZM32-SN/Beta/0.10/VZM32-SN_0.10.ota",
-    "url": "https://raw.githubusercontent.com/Koenkk/zigbee-OTA/master/images/Inovelli/VZM32-SN_0.10.ota",
-    "imageType": 259,
-    "manufacturerCode": 4655,
-    "sha512": "a766719e1f13893adb17ce8aec13d198ce8371a0bb740203515524f972305e8f7cd2b4904b1a50bae9664b44f87d7132305a3348fd0e4481049439a71c19bf89",
-    "otaHeaderString": "vzm32-sn_mmWave"
-  },
-  {
     "fileName": "A60_DIM_T-0x00CD-0x03483712-MF_DIS.OTA",
     "fileVersion": 55064338,
     "fileSize": 241408,
@@ -9427,5 +9416,16 @@
     "manufacturerCode": 4742,
     "sha512": "69d48905d3a3e64177ce41aeb98062610aa6f0ef6b04d5324e8d49352d458cf48c6e5b5d4641a8b1a8bb4d5ad56fe35c4c4da512349c0701cf771b940806ef9a",
     "otaHeaderString": "EBL FWPLUG_MINIZB1GSP_ELECTRICAL"
+  },
+  {
+    "fileName": "VZM32-SN_1.02.ota",
+    "fileVersion": 16974082,
+    "fileSize": 227442,
+    "originalUrl": "https://files.inovelli.com/firmware/VZM32-SN/Production/1.02/VZM32-SN_1.02.ota",
+    "url": "https://raw.githubusercontent.com/Koenkk/zigbee-OTA/master/images/Inovelli/VZM32-SN_1.02.ota",
+    "imageType": 259,
+    "manufacturerCode": 4655,
+    "sha512": "c203b8b462a2d5b71be3d760ea5ef4bd4ce4df051e3816775ec1f5386f1451e40f527109378208a183da8ad821a38e80ddacc71ab8e3bf3d79ca73062cad4ba2",
+    "otaHeaderString": "vzm32-sn_mmWave"
   }
 ]
