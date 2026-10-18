@@ -4212,12 +4212,6 @@
     "zigbeeStackVersion": "ZigbeePro"
   },
   {
-    "url": "https://raw.githubusercontent.com/Koenkk/zigbee-OTA/master/images/Hue/100B-0129-01000D06-Light-EFR32MG26.zigbee",
-    "stack": "EmberZNet",
-    "stackDetails": "GBL",
-    "zigbeeStackVersion": "ZigbeePro"
-  },
-  {
     "url": "https://raw.githubusercontent.com/Koenkk/zigbee-OTA/master/images/Hue/100B-010C-01002900-ConfLight-Lamps_0012.zigbee",
     "stack": "Unknown",
     "stackDetails": "",
@@ -5005,6 +4999,12 @@
   },
   {
     "url": "https://raw.githubusercontent.com/Koenkk/zigbee-OTA/master/images/Hue/100B-0118-01002300-PixelLum-EFR32MG21.zigbee",
+    "stack": "EmberZNet",
+    "stackDetails": "GBL",
+    "zigbeeStackVersion": "ZigbeePro"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Koenkk/zigbee-OTA/master/images/Hue/100B-0129-01001200-Light-EFR32MG26.zigbee",
     "stack": "EmberZNet",
     "stackDetails": "GBL",
     "zigbeeStackVersion": "ZigbeePro"
